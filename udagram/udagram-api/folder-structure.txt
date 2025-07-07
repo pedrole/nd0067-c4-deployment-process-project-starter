@@ -1,0 +1,74 @@
+.
+├── .dockerignore
+├── .eslintrc.json
+├── folder-structure.txt
+├── .gitignore
+├── mock
+│   ├── xander0.jpg
+│   ├── xander1.jpg
+│   └── xander2.jpg
+├── .npmrc
+├── package.json
+├── package-lock.json
+├── Procfile
+├── src
+│   ├── aws.ts
+│   ├── config
+│   │   ├── config.ts
+│   │   └── README.md
+│   ├── controllers
+│   │   └── v0
+│   │       ├── feed
+│   │       │   ├── models
+│   │       │   │   └── FeedItem.ts
+│   │       │   └── routes
+│   │       │       └── feed.router.ts
+│   │       ├── index.router.ts
+│   │       ├── model.index.ts
+│   │       └── users
+│   │           ├── models
+│   │           │   └── User.ts
+│   │           └── routes
+│   │               ├── auth.router.ts
+│   │               └── user.router.ts
+│   ├── migrations
+│   │   ├── 20190325-create-feed-item.js
+│   │   └── 20190328-create-user.js
+│   ├── sequelize.ts
+│   └── server.ts
+├── tsconfig.json
+├── tslint.json
+└── www
+    ├── aws.js
+    ├── aws.js.map
+    ├── config
+    │   ├── config.js
+    │   └── config.js.map
+    ├── controllers
+    │   └── v0
+    │       ├── feed
+    │       │   ├── models
+    │       │   │   ├── FeedItem.js
+    │       │   │   └── FeedItem.js.map
+    │       │   └── routes
+    │       │       ├── feed.router.js
+    │       │       └── feed.router.js.map
+    │       ├── index.router.js
+    │       ├── index.router.js.map
+    │       ├── model.index.js
+    │       ├── model.index.js.map
+    │       └── users
+    │           ├── models
+    │           │   ├── User.js
+    │           │   └── User.js.map
+    │           └── routes
+    │               ├── auth.router.js
+    │               ├── auth.router.js.map
+    │               ├── user.router.js
+    │               └── user.router.js.map
+    ├── sequelize.js
+    ├── sequelize.js.map
+    ├── server.js
+    └── server.js.map
+
+22 directories, 49 files
