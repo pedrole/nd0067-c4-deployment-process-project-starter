@@ -48,6 +48,21 @@ jobs:
       - aws-cli/setup
       - checkout
       - run:
+        name: Set EB environment variables
+        command: |
+          cd udagram/udagram-api
+          eb setenv \
+            JWT_SECRET=$JWT_SECRET \
+            POSTGRES_HOST=$POSTGRES_HOST \
+            POSTGRES_PORT=$POSTGRES_PORT \
+            POSTGRES_DB=$POSTGRES_DB \
+            POSTGRES_USERNAME=$POSTGRES_USERNAME \
+            POSTGRES_PASSWORD=$POSTGRES_PASSWORD \
+            AWS_BUCKET=$AWS_BUCKET \
+            AWS_REGION=$AWS_REGION \
+            AWS_PROFILE=$AWS_PROFILE \
+            API_HOST=$API_HOST \
+      - run:
           name: Deploy Frontend & Backend
           command: |
             cd udagram/udagram-frontend
