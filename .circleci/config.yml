@@ -62,7 +62,8 @@ jobs:
               AWS_REGION=$AWS_REGION \
               AWS_PROFILE=$AWS_PROFILE \
               API_HOST=$API_HOST \
-              URL=$URL
+              URL=$URL \
+              PORT=$PORT
       - run:
           name: Deploy Frontend & Backend
           command: |
